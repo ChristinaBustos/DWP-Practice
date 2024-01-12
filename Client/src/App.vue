@@ -32,7 +32,7 @@
     <div class="container-fluid" id="main">
       <div class="row row-offcanvas row-offcanvas-left vh-100">
         <div
-          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light pl-0"
+          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light pl-0 box-shadow"
           id="sidebar"
           role="navigation"
         >
@@ -64,7 +64,7 @@
         </div>
         <!--/col-->
         <main class="col main pt-2 mt-3 h-100 overflow-auto">
-          <b-card>
+          <b-card class="box-shadow">
             <h1 class="display-4 d-none d-sm-block">BIG TIME RUSH</h1>
           <img src="./assets/img/btr.jpg" class="img-btr" alt="Kitten" />
           <b-card-text>
@@ -80,7 +80,7 @@
           </b-card>
         </main>
         <div
-          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light pl-0"
+          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light  box-shadow"
           id="sidebar"
           role="navigation"
         >
@@ -156,9 +156,14 @@ html {
 
 .img-totoro {
   width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .img-btr {
   width: 70%;
+}
+
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 </style>
