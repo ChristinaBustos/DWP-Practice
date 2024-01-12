@@ -42,6 +42,23 @@
               <b-nav-item>Anime Reciente</b-nav-item>
               <b-nav-item>Nuevo album BTR</b-nav-item>
               <b-nav-item>Cafeterías</b-nav-item>
+              <b-nav-item active>Coreano básico</b-nav-item>
+              <b-nav-item>Anime Reciente</b-nav-item>
+              <b-nav-item>Nuevo album BTR</b-nav-item>
+              <b-nav-item>Cafeterías</b-nav-item>
+              <b-nav-item active>Coreano básico</b-nav-item>
+              <b-nav-item>Anime Reciente</b-nav-item>
+              <b-nav-item>Nuevo album BTR</b-nav-item>
+              <b-nav-item>Cafeterías</b-nav-item>
+              <b-nav-item active>Coreano básico</b-nav-item>
+              <b-nav-item>Anime Reciente</b-nav-item>
+              <b-nav-item>Nuevo album BTR</b-nav-item>
+              <b-nav-item>Cafeterías</b-nav-item>
+              <b-nav-item active>Coreano básico</b-nav-item>
+              <b-nav-item>Anime Reciente</b-nav-item>
+              <b-nav-item>Nuevo album BTR</b-nav-item>
+              <b-nav-item>Cafeterías</b-nav-item>
+              <b-nav-item active>Coreano básico</b-nav-item>             
             </b-nav>
           </ul>
         </div>
@@ -56,12 +73,6 @@
                   >Big Time Rush llenó de alegría, ritmo y nostalgia el Palacio de
                   los Deportes</b
                 >
-                Por segundo año consecutivo (después de un largo descanso de 2014 a
-                2021) Big Time Rush regresó a México, cumpliendo la promesa que
-                hicieron en su Forever Tour; recordemos que en 2022 volvieron a los
-                escenarios y en México la emoción de sus fanáticas se desbordó desde
-                que pisaron el aeropuerto, claro que era de esperarse, ya que las
-                rushers esperaron mucho tiempo por reunirse con sus ídolos.
               </p>
             </b-card-text>
 
@@ -73,15 +84,16 @@
           id="sidebar"
           role="navigation"
         >
+        <b-card>
           <img src="./assets/img/totoro.jpg" class="img-totoro" alt="Kitten" />
-          <h2 class="display-5 d-none d-sm-block">Studio Ghilbi</h2>
-          <p>
-            El nombre “Ghibli” proviene del término italiano para el viento
-            cálido del Sahara, que los fundadores del estudio eligieron para
-            representar su deseo de traer un nuevo aire a la animación japonesa
-            1. La mayoría de las películas de Studio Ghibli tienen protagonistas
-            femeninas, que son retratadas de manera realista y con autonomía
-          </p>
+          <b-card-text>
+              <p>
+                Studio Ghibli es un estudio japonés de animación, considerado
+                  por la crítica especializada y muchos cinéfilos como uno de los
+                  mejores estudios de animación del mundo en la actualidad.
+              </p>
+            </b-card-text>
+          </b-card>      
         </div>
       </div>
     </div>
@@ -97,10 +109,6 @@ html {
   overflow: hidden;
 }
 
-/*
- * Off Canvas sidebar at medium breakpoint
- * --------------------------------------------------
- */
 @media screen and (max-width: 992px) {
   .row-offcanvas {
     position: relative;
@@ -151,6 +159,6 @@ html {
 }
 
 .img-btr {
-  width: 100%;
+  width: 70%;
 }
 </style>
