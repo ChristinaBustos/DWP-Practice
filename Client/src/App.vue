@@ -53,16 +53,16 @@
                </b-row>
               </b-nav-item>
               <b-nav-item>
+                <b-icon icon="house-door" aria-hidden="true"></b-icon>
+                <b-link :to="{ name: 'inicio' }">Inicio</b-link>
+              </b-nav-item>
+              <b-nav-item>
                 <b-icon icon="house" aria-hidden="true"></b-icon>
                 <b-link :to="{ name: 'renta' }"> Renta tu espacio</b-link>
               </b-nav-item>
               <b-nav-item>
                 <b-icon icon="door-closed-fill" aria-hidden="true"></b-icon>
                 <b-link :to="{ name: 'rentSpaces' }">Rentar espacio</b-link>
-              </b-nav-item>
-              <b-nav-item>
-                <b-icon icon="house-door" aria-hidden="true"></b-icon>
-                <b-link :to="{ name: 'main' }">Departamentos</b-link>
               </b-nav-item>
               <b-nav-item>
                 <b-icon icon="house-door-fill" aria-hidden="true"></b-icon>
