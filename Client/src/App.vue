@@ -1,22 +1,21 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark" sticky>
-      <b-navbar-brand href="#">
-        <b-icon icon="bookmark-heart" aria-hidden="true"></b-icon>
-        Cultura
+      <b-navbar-brand>
+        <b-icon icon="house" aria-hidden="true"></b-icon>
+        Airbnb
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Anime</b-nav-item>
-          <b-nav-item href="#">K-pop</b-nav-item>
-          <b-nav-item href="#">Cafeterías</b-nav-item>
-          <b-nav-item href="#">Dibujos</b-nav-item>
+          <b-nav-item href="#">Casas</b-nav-item>
+          <b-nav-item href="#">Departamentos</b-nav-item>
+          <b-nav-item href="#">Cabañas</b-nav-item>
         </b-navbar-nav>
 
-        <!-- Right aligned nav items -->
+        <!-- Right aligned nav items z-index -->
         <b-navbar-nav class="ml-auto">
           <b-nav-item-dropdown text="Idioma" right>
             <b-dropdown-item href="#">EN</b-dropdown-item>
@@ -27,143 +26,64 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-
-    <!-- Sidebar -->
-    <div class="container-fluid" id="main">
-      <div class="row row-offcanvas row-offcanvas-left vh-100">
-        <div
-          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light pl-0 box-shadow"
-          id="sidebar"
-          role="navigation"
-        >
-          <ul class="nav flex-column sticky-top pl-0 pt-2 mt-3">
-            <b-nav vertical>
-              <b-nav-item active>Coreano básico</b-nav-item>
-              <b-nav-item>Anime Reciente</b-nav-item>
-              <b-nav-item>Nuevo album BTR</b-nav-item>
-              <b-nav-item>Cafeterías</b-nav-item>
-              <b-nav-item active>Coreano básico</b-nav-item>
-              <b-nav-item>Anime Reciente</b-nav-item>
-              <b-nav-item>Nuevo album BTR</b-nav-item>
-              <b-nav-item>Cafeterías</b-nav-item>
-              <b-nav-item active>Coreano básico</b-nav-item>
-              <b-nav-item>Anime Reciente</b-nav-item>
-              <b-nav-item>Nuevo album BTR</b-nav-item>
-              <b-nav-item>Cafeterías</b-nav-item>
-              <b-nav-item active>Coreano básico</b-nav-item>
-              <b-nav-item>Anime Reciente</b-nav-item>
-              <b-nav-item>Nuevo album BTR</b-nav-item>
-              <b-nav-item>Cafeterías</b-nav-item>
-              <b-nav-item active>Coreano básico</b-nav-item>
-              <b-nav-item>Anime Reciente</b-nav-item>
-              <b-nav-item>Nuevo album BTR</b-nav-item>
-              <b-nav-item>Cafeterías</b-nav-item>
-              <b-nav-item active>Coreano básico</b-nav-item>             
+    <b-container>
+     <b-col cols="12">
+      <b-row>
+        <b-col cols="2">
+          <b-sidebar
+            z-index="-1"
+            id="sidebar"
+            width="250px"
+            shadow
+            visible
+            no-close-on-route-change
+            no-header-close
+          >
+            <b-nav vertical class="pt-5">
+              <b-nav-item class="d-flex align-items-center">
+               <b-row>
+                <b-col>
+                  <b-icon icon="house-fill" scale="2.5" class="my-2" aria-hidden="true"></b-icon>
+                </b-col>
+                <b-col>
+                  <h1 class="mb-0 ml-2">
+                    <b-link>Airbnb</b-link>
+                  </h1>
+                </b-col>
+               </b-row>
+              </b-nav-item>
+              <b-nav-item>
+                <b-icon icon="house" aria-hidden="true"></b-icon>
+                <b-link :to="{ name: 'renta' }"> Renta tu espacio</b-link>
+              </b-nav-item>
+              <b-nav-item>
+                <b-icon icon="door-closed-fill" aria-hidden="true"></b-icon>
+                <b-link :to="{ name: 'rentSpaces' }">Rentar espacio</b-link>
+              </b-nav-item>
+              <b-nav-item>
+                <b-icon icon="house-door" aria-hidden="true"></b-icon>
+                <b-link :to="{ name: 'main' }">Departamentos</b-link>
+              </b-nav-item>
+              <b-nav-item>
+                <b-icon icon="house-door-fill" aria-hidden="true"></b-icon>
+                <b-link :to="{ name: 'main' }">Casas</b-link>
+              </b-nav-item>
             </b-nav>
-          </ul>
-        </div>
-        <!--/col-->
-        <main class="col main pt-2 mt-3 h-100 overflow-auto">
-          <b-card class="box-shadow">
-            <h1 class="display-4 d-none d-sm-block">BIG TIME RUSH</h1>
-          <img src="./assets/img/btr.jpg" class="img-btr" alt="Kitten" />
-          <b-card-text>
-              <p>
-                <b
-                  >Big Time Rush llenó de alegría, ritmo y nostalgia el Palacio de
-                  los Deportes</b
-                >
-              </p>
-            </b-card-text>
-
-            <b-card-text>A second paragraph of text in the card.</b-card-text>
-          </b-card>
-        </main>
-        <div
-          class="col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light  box-shadow"
-          id="sidebar"
-          role="navigation"
-        >
-        <b-card>
-          <img src="./assets/img/totoro.jpg" class="img-totoro" alt="Kitten" />
-          <b-card-text>
-              <p>
-                Studio Ghibli es un estudio japonés de animación, considerado
-                  por la crítica especializada y muchos cinéfilos como uno de los
-                  mejores estudios de animación del mundo en la actualidad.
-              </p>
-            </b-card-text>
-          </b-card>      
-        </div>
-      </div>
-    </div>
+          </b-sidebar>
+        </b-col>
+        <b-col cols="10">
+          <router-view></router-view>
+        </b-col>
+      </b-row>
+     </b-col>
+    </b-container>
   </div>
 </template>
 
 <script setup></script>
 
 <style>
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 992px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
-
-  .row-offcanvas-left .sidebar-offcanvas {
-    left: -33%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 33%;
-    margin-left: -6px;
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 33%;
-    height: 100%;
-    overflow: auto;
-  }
-}
-
-/*
- * Off Canvas wider at sm breakpoint
- * --------------------------------------------------
- */
-@media screen and (max-width: 34em) {
-  .row-offcanvas-left .sidebar-offcanvas {
-    left: -45%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 45%;
-    margin-left: -6px;
-  }
-
-  .sidebar-offcanvas {
-    width: 45%;
-  }
-}
-
-.img-totoro {
-  width: 100%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.img-btr {
-  width: 70%;
-}
-
-.box-shadow{
+.box-shadow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 </style>
