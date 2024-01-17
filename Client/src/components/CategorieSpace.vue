@@ -6,7 +6,7 @@
         <b-row no-gutters>
           <b-col md="6">
             <b-card-img
-              src="https://img.freepik.com/foto-gratis/sala-conferencias-escritorio-pared-ventanas-que-dice-oficina_1340-37385.jpg?w=996&t=st=1705387293~exp=1705387893~hmac=dddcf9d723b6d4f3aff08f8a94ca2c1a6e8f9d1e29e83aec1baaa290a71f3713"
+              src="https://img.freepik.com/fotos-premium/diseno-interiores-oficina-modernodiseno-interiores-oficina-modernointerior-oficina-computadora-computadora-portatil-o_912214-6351.jpg?w=996"
               alt="Image"
               class="rounded-0"
             ></b-card-img>

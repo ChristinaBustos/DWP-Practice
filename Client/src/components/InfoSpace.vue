@@ -6,7 +6,7 @@
         <b-row no-gutters>
           <b-col md="6">
             <b-card-img
-              src="https://img.freepik.com/foto-gratis/sala-conferencias-escritorio-pared-ventanas-que-dice-oficina_1340-37385.jpg?w=996&t=st=1705387293~exp=1705387893~hmac=dddcf9d723b6d4f3aff08f8a94ca2c1a6e8f9d1e29e83aec1baaa290a71f3713"
+              src="https://img.freepik.com/vector-gratis/espacio-trabajo-plano-estilo-isometrico_23-2147687151.jpg?w=740&t=st=1705466486~exp=1705467086~hmac=f68a0f92f1a587773903c88e1bea7110ed2b2de396cc34283202531f94639694"
               alt="Image"
               class="rounded-0"
             ></b-card-img>
