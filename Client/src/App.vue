@@ -27,9 +27,9 @@
       </b-collapse>
     </b-navbar>
     <b-container>
-     <b-col cols="12">
-      <b-row>
-        <b-col cols="2">
+      <!-- <b-col cols="12"> -->
+        <b-row>
+          <!-- <b-col cols="2">
           <b-sidebar
             z-index="-1"
             id="sidebar"
@@ -70,12 +70,12 @@
               </b-nav-item>
             </b-nav>
           </b-sidebar>
-        </b-col>
-        <b-col cols="10">
-          <router-view></router-view>
-        </b-col>
-      </b-row>
-     </b-col>
+        </b-col> -->
+          <b-col cols="12">
+            <router-view></router-view>
+          </b-col>
+        </b-row>
+      <!-- </b-col> -->
     </b-container>
   </div>
 </template>

@@ -52,9 +52,9 @@ const routes = [
                 name:'categorie',
                 component: () => import('../components/CategorieSpace.vue')
             },{
-                path:'/rentSpaces',
-                name:'rentSpaces',
-                component: () => import('../components/RentSpaces.vue')
+                path:'/form',
+                name:'form',
+                component: () => import('../components/Formulario.vue')
             }
 
 
